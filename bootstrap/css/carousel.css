@@ -139,10 +139,16 @@ body {
     font-size: 50px;
   }
 
+  .featurette-page{
+    font-size: 50px;
+  }
 }
 
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
+  }
+  .featurette-page{
+    margin-top: 20px;
   }
 }
