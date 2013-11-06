@@ -63,3 +63,15 @@
     margin-top: 120px;
   }
 }
+
+
+/*======================
+  Page Footer 
+  ======================*/
+.page-footer > p > small > a{
+  color: #777;
+}
+.page-footer > p > small > a:hover,
+.page-footer > p > small > a:focus{
+   color: #CE1126; 
+}
