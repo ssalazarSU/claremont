@@ -1,9 +1,20 @@
-.navbar{
-  background-color:#ffffff;
-}
+
+
+/*=====================
+   Carousel Mods       
+  =====================*/
 
 .carousel{
   margin-top: 50px;
+}
+
+
+/*=====================
+   Navbar Mods         
+  =====================*/
+
+.navbar{
+  background-color:#ffffff;
 }
 
 .navbar-nav{
@@ -26,4 +37,29 @@
  border-right: 1px solid #000;
  padding-top: 0px;
  padding-bottom: 0px;
+}
+
+
+/*======================
+  Page Featurette Mods 
+  ======================*/
+
+.featurette-page-heading {
+    margin-top: 140px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+
+@media (min-width: 768px) {
+  .featurette-page-heading {
+    margin-top: 130px;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-page-heading {
+    margin-top: 120px;
+  }
 }
