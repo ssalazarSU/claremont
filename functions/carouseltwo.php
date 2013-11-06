@@ -99,7 +99,31 @@ class Carousel_Two{
         	'section'=> 'mytheme_options_two',
         	'type'    => 'dropdown-pages',
         	'settings'   => 'mytheme_options_two[carousel_pagelink_two]',
-		));
+	   ));
+	
+   
+        //  =============================
+        //  = Pagelink Title            =
+        //  =============================
+	   $wp_customize->add_setting('mytheme_options_two[carousel_pagelink_title_two]',
+		array(
+			'default'=> 'Button Two Title',
+			'type' => 'option',
+			'capability'=> 'edit_theme_options',
+		)
+	   );
+
+	   $wp_customize->add_control ( new WP_Customize_Control( $wp_customize,
+	   	'mytheme_carousel_pagelinktitle_two',//Set a unique ID for the control
+		array(
+		        
+			'label'=> __('Carousel page link title', 'Claremont Theme'),
+			'type'=>'text',
+			'section'=> 'mytheme_options_two',//ID of the section this control renders 
+			'settings'=>'mytheme_options_two[carousel_pagelink_title_two]',//ID of the setting
+			)					 
+	   ));
+    
     }
 }
 

@@ -100,6 +100,29 @@ class Carousel_Three{
         	'type'    => 'dropdown-pages',
         	'settings'   => 'mytheme_options_three[carousel_pagelink_three]',
 		));
+
+
+        //  =============================
+        //  = Pagelink Title            =
+        //  =============================
+	   $wp_customize->add_setting('mytheme_options_three[carousel_pagelink_title_three]',
+		array(
+			'default'=> 'Button Three Title',
+			'type' => 'option',
+			'capability'=> 'edit_theme_options',
+		)
+	   );
+
+	   $wp_customize->add_control ( new WP_Customize_Control( $wp_customize,
+	   	'mytheme_carousel_pagelinktitle_three',//Set a unique ID for the control
+		array(
+		        
+			'label'=> __('Carousel page link title', 'Claremont Theme'),
+			'type'=>'text',
+			'section'=> 'mytheme_options_three',//ID of the section this control renders 
+			'settings'=>'mytheme_options_three[carousel_pagelink_title_three]',//ID of the setting
+			)					 
+	   ));
     }
 }
 

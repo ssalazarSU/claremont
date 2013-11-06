@@ -86,7 +86,7 @@ class Carousel_One{
 	   
 	   
         //  =============================
-        //  = Page Dropdown             =
+        //  = Pagelink Dropdown         =
         //  =============================
 	   $wp_customize->add_setting('mytheme_options_one[carousel_pagelink_one]', 
 	   	array(
@@ -100,6 +100,30 @@ class Carousel_One{
         	'type'    => 'dropdown-pages',
         	'settings'   => 'mytheme_options_one[carousel_pagelink_one]',
 		));
+
+   	
+        //  =============================
+        //  = Pagelink Title            =
+        //  =============================
+	   $wp_customize->add_setting('mytheme_options_one[carousel_pagelink_title_one]',
+		array(
+			'default'=> 'Button One Title',
+			'type' => 'option',
+			'capability'=> 'edit_theme_options',
+		)
+	   );
+
+	   $wp_customize->add_control ( new WP_Customize_Control( $wp_customize,
+	   	'mytheme_carousel_pagelinktitle_one',//Set a unique ID for the control
+		array(
+		        
+			'label'=> __('Carousel page link title', 'Claremont Theme'),
+			'type'=>'text',
+			'section'=> 'mytheme_options_one',//ID of the section this control renders 
+			'settings'=>'mytheme_options_one[carousel_pagelink_title_one]',//ID of the setting
+			)					 
+	   ));
+    
     }
 }
 

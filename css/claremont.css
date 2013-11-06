@@ -8,11 +8,25 @@
   margin-top: 50px;
 }
 
+.btn-primary {
+  color: #ffffff;
+  background-color: #770000;
+  border-color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #CE1126;
+  border-color: #ffffff;
+}
 
 /*=====================
    Navbar Mods         
   =====================*/
-
 .navbar{
   background-color:#ffffff;
 }
@@ -144,3 +158,4 @@
 .page-footer > p > small > a:focus{
    color: #CE1126; 
 }
+
