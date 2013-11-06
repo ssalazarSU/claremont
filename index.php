@@ -10,12 +10,12 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img  src="<?php $result = get_option('mytheme_options_one'); echo($result['carousel_one']) ?>" alt="First slide">
+          <img  src="<?php $result = get_option('mytheme_options_one'); echo($result['carousel_image_one']) ?>" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1><?php $result = get_option('mytheme_options_one'); echo($result['carousel_title_one']) ?></h1>
               <p><?php $result = get_option('mytheme_options_one'); echo($result['carousel_textarea_one']) ?></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <p><a class="btn btn-lg btn-primary" href="<?php $result = get_option('mytheme_options_one');  echo get_permalink($result['carousel_pagelink_one']); ?>" role="button">Sign up today</a></p>
             </div>
           </div>
         </div>
