@@ -10,6 +10,9 @@ include('functions/customtextarea.php');
 include('functions/carouselone.php');
 include('functions/carouseltwo.php');
 include('functions/carouselthree.php');
+include('functions/marketingone.php');
+include('functions/marketingtwo.php');
+include('functions/marketingthree.php');
 include('functions/wpbootstrap.php');                 
 include('functions/navwalker.php');
 

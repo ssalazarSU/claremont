@@ -11,7 +11,7 @@ class Carousel_Three{
 	   $wp_customize->add_section( 'mytheme_options_three',
 	   	array(
 			'title'=> __('Carousel Three Options', 'Claremont Theme'),
-			'priority'=> 36, //Determines what order this appears in
+			'priority'=> 37, //Determines what order this appears in
 			'capability'=> 'edit_theme_options', //Capability needed to tweak
 			'description'=> __('Allows you to customize some example setting for Claremont Theme', 'Claremont Theme'),
 		)
