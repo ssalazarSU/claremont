@@ -21,6 +21,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <style id="holderjs-style" type="text/css"></style>
+    <link rel='stylesheet' type='text/css' href="<?php bloginfo( 'url' ); ?> "/>
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
 </head>

@@ -11,7 +11,7 @@
           <img  src="<?php $result = get_option('mytheme_options_one'); echo($result['carousel_image_one']); ?>" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1><?php $result = get_option('mytheme_options_one'); echo($result['carousel_title_one']); ?></h1>
+              <h1 style=><?php $result = get_option('mytheme_options_one'); echo($result['carousel_title_one']); ?></h1>
               <p><?php $result = get_option('mytheme_options_one'); echo($result['carousel_textarea_one']); ?></p>
               <p><a class="btn btn-lg btn-primary" href="<?php $result = get_option('mytheme_options_one');  echo get_permalink($result['carousel_pagelink_one']); ?>" role="button">
 	      	    <?php $result = get_option('mytheme_options_one'); echo($result['carousel_pagelink_title_one']); ?>
